@@ -8,6 +8,11 @@ const {signupRoute}=require("./Routes/signupRoute")
 require("dotenv").config()
 
 const app=express()
+
+app.get("/", (req, res) => {
+    res.send("Welcome to the backend of fitness-class-booking-sysstem");
+  });
+
 app.use(cors({
     origin:"*"
 }))
